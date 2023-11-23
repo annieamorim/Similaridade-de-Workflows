@@ -1,11 +1,11 @@
-from google.colab import drive
-drive.mount('/content/drive')
-
 import os
 import json
 import networkx as nx
 import matplotlib.pyplot as plt
 import random
+
+from google.colab import drive
+drive.mount('/content/drive')
 
 def build_graph_from_workflow(workflow_path):
     with open(workflow_path, 'r') as f:
