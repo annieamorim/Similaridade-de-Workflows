@@ -105,10 +105,6 @@ def memory_usage_psutil():
     mem_info = process.memory_info()
     return mem_info.rss / 1024
 
-filename_to_index = {filename: i+1 for i, filename in enumerate(filenames)}
-specific_filename = "workflow_1.json"
-print(f"Index for {specific_filename}: {filename_to_index[specific_filename]}")
-
 start_time = time.time()
 memory_before = memory_usage_psutil()
 
